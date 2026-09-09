@@ -1,4 +1,4 @@
-{
+{//used to view the app in mobile devices, meta tags are viewed via this file
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
