@@ -86,3 +86,20 @@ export default App
 
 
 //React router DOM is a third party library 
+
+
+//CONTEXT API:-
+//we need to pass data in <Card/> via <App/>  
+//when we need to pass a prop from App to a component that's nested inside many other components, then we have to pass it to all the files from top to bottom ie. if the prop has to be passed to any component that's nested inside several other components then it has to be passed to all the components inside which it's nested in order to pass the prop to the final commponent
+//in such a case a global file can be created that contains all the props as such that are needed to be used by other nested component files and the props that are fetched from the database or something using App then it can also directly pass the data to the global file that can pass it further to other files whenever needed without passing it to many other nested files unnecessarily 
+//this process of passing all the data to the global file and then using from it to the other files is k/a prop drilling 
+//but the things aren't understandable via prop drilling generally so the CONTEXT API comes into use
+//Along with the context api there're many other libraries as well that solve this problem as this isn't just the problem of react, it's the common problem of many others as well even before react this problem existed, as the context api is associatd purely with react so there're many other things as well like redux that solve this problem 
+
+//REDUX takes care of all the data management ie. the passing of the data from one to another place in an organised form 
+//there're many other versions of redux as well, redux in itself is a stand alone library but if we want to work with react alone then we've react-redux and we've an easier version of react as well ie. the redux-toolkkit(RTK)
+//another library for state library is zustand
+
+
+//almost in all the complex react projects involving apis, foolowing good practices, dealing with servers etc 
+
