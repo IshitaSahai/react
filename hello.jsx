@@ -103,3 +103,8 @@ export default App
 
 //almost in all the complex react projects involving apis, foolowing good practices, dealing with servers etc 
 
+
+
+//local storage
+//setitem, getitem
+//initially when we reload our app then we may already hv the values that are already in our todo list so we need a method that can go to local storage and take all the values that are needed to be inserted in the todo:- useEffect 
