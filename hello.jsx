@@ -108,3 +108,45 @@ export default App
 //local storage
 //setitem, getitem
 //initially when we reload our app then we may already hv the values that are already in our todo list so we need a method that can go to local storage and take all the values that are needed to be inserted in the todo:- useEffect 
+
+
+
+
+//REDUX:-
+//redux is an independent state management library 
+//just like react is a separate library and react dom is a library that's used if we're working for website and react native is a library that's used if we're working on mobile similar is the case of redux
+
+//redux is a core library, but we need a library k/a react-redux in order to implement it in any framework 
+//just like in order to implement react we need both react and react dom similarly in order to use redux in react we need both redux and react-redux
+
+//difference between core redux library and the redux toolkit 
+
+//in context api, we used to take all the values needed using a hook that is 'useContext' , so we used to make a hook 'use' and wrap witht the provider
+
+//redux came after a long time, before redux, we had flux
+//flux architecture was designed by facebook as they were also facing the problem of state management that where to pass prop inside a component and where not to pass it and there were many components where some extra props were being passed without the need to pass them so it was also a problem
+//flux managed many works:- state management was solved using htis usign the fact that there should be a central store using which we should take the entire data just like a global variable 
+//one more thing that took place via this redux is the data flow:- the data goes to the store only in one way and gets updated and whenever we take the values from the store,we take it 
+//there should be a way in which we use the vlaues from the store and the way in which we update it 
+//for example when we were using the context api then we had to spread the values while using it from the arrays, we'd to do it as we didn't want to looe our values and if we had forgotten doing so then we may hv overwritten the values of the array  
+
+//all these things should be automatically managed that if we're creating any new array or updating the values of the array then we can access the new values automatically and we don't hv to worry abt all this
+
+//flux could solve it somewhat but upto some extent only and not fully
+//so redux is something that resolves this problem:- it introduced the concepts like:- the state should be read only and there should be a single source  at which the values should be present //one should never modify/mutate the state //changes should be made using functions via pure functions/ via reducers //it shouldn't be like anyone takes any function and then overwrite it //functionality should go via reducers only and not via any other way and all the works should be done using a proper mechanism
+//redux is an independent library that works with view, react and many other js frameworks/libraries as well
+
+//redux was very good but a lot of setup was needed to be done in it
+//in redux toolkit, there was no need to do a lot of setup there was a simple flow and all other things were internally managed in it 
+
+//there's a lot of abstraction in redux-toolkit, a lot of ways to create stores in it and a lot of middlewares are also present in it
+
+
+//CONCEPTS OF REDUX AND REDUX TOOLKIT:-
+//STORES:-it's a kind of global variable that contains all the things and from which we can take all the things 
+
+//reducer:-control the whole functionality of the stores
+
+//useSelector:-to select any value from the store
+//useDispatch:-to send/dispatch any value from the store
+
