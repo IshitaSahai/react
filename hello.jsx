@@ -150,3 +150,72 @@ export default App
 //useSelector:-to select any value from the store
 //useDispatch:-to send/dispatch any value from the store
 
+
+
+
+
+//MEGA PROJECT:-
+//we're using appwrite for our backend services
+//appwrite is a complete backend as a service
+//firebase is also similar to this but appwrite is open source
+//open source benefit:- if we want to not use their could and use our own cloud then we can simply take the project and deploy it and we'll get our own appwrite
+//resources required for this project:-
+//https://appwrite.io
+//https://appwrite.io/products/databases
+//https://appwrite.io/docs/references/cloud/client-web/storage
+
+// https://www.npmjs.com/package/@tinymce/tinymce-react
+//https://www.tiny.cloud/docs/tinymce/6/apis/tinymce.root/
+// https://github.com/tinymce/tinymce
+
+// https://react-hook-form.com/
+
+//https://create-react-app.dev/docs/adding-custom-environment-variables/
+//https://vite.dev/guide/env-and-mode.html
+
+//https://www.npmjs.com/package/html-react-parser
+
+//https://www.tiny.cloud/
+
+
+//steps:-
+//1) make a basic application cover
+//2) NOW WE'LL USE ENV VARIABLES:- as we'll use any sort ofdatabase where our application will talk and our database may hv some unique secrets/id/passwords so if we'll use all of that here then there'll be a problem as react is a frontend library so whatever's written here that's shipped from js to the browser and there're ways to get out all the data of js from the browser 
+//so some variables are the system variables so the way of keeping them is different and when we deploy our application in production then in whichever software we're deploying, we need to copy paste the value of that variable in that secret manager
+
+//application is designed in such a way that env variables are kept separate
+
+//and the accessibility depends on the use of the frameworklibrary we're using 
+
+//IMP THING:-
+//env variables should be in root of the project 
+
+
+
+
+//PRODUCTION GRADE THING:-
+//usually when we make a form and take an input and a password field and a login button in it then we can take both input and password fields and store them in the state and when the login gets clicked then we can take both of their values from the state ,or instead of making 2 different states we can directly take an object and put both the states in it 
+
+//we can add the values and trigger the events onchange and update the values in the state
+
+//we can add a method on login onclick that as soon as login is clicked take the values of both the states and directly dispatch any event or if we wanna do it directly then we can take the method from services and then put the values of email and password in the input field and send it to the appwrite or whatever service we're using 
+
+
+//PRODUCTION GRADE THING IS THAT:- the input field is made a separate different component that can be used anywhere, it's made very prop related that what placeholder will be passed in it, what should be the label and the styling so that it can be used anywhere in the input field, the register or anywhere where we need to use the input field
+
+
+
+
+//CORS error:- while logging in by creating the new account
+//CORS:- cross origin resource sharing:- means that the browser has the security that it doesn't serve the requests from the cross origin ie. if the server is at some other port/url and the frontend is at some other port than they can't interact as the browser says that how it'll know that the source from which traffic is coming is a trusted source 
+//for that purpose, cors is a arigin policy that's used to stop such things 
+//cors is usually solved at the backend, at the frontend it's rarely solved (1% or 2%) but mostly it's solved at the backend
+//whenever CORS appears, it means that the url at the backend isn't whitelisted or there's no entry of that url at the backend 
+
+
+//imp things:-
+//controller 
+//react hook form
+//AuthLayout
+//Input
+//Select 
